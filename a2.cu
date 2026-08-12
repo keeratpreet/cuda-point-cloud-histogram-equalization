@@ -822,6 +822,9 @@ static void run_kmeans(int N, int K, int T,
 }
 
 // MAIN
+// Parses the input point cloud, dispatches to whichever neighbourhood
+// strategy was requested on the command line, and writes the remapped
+// intensities (with original x/y/z) to the corresponding output file.
 int main(int argc, char *argv[])
 {
     if (argc < 3){
