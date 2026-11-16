@@ -40,3 +40,7 @@ Measured on a Tesla K40m (2880 cores) against a sequential `g++ -O2` baseline:
 All three methods are numerically correct (MAE = 0 vs. sequential reference for exact KNN and K-Means; MAE = 0.0014 for approximate KNN, well under the assignment's error threshold of 3). Approximate KNN scales best because its per-thread cost stays roughly constant (~1000 candidates) while the sequential baseline it's compared against grows as O(n²).
 
 See `report.pdf` for the full writeup, including CUDA kernel listings and per-optimization analysis.
+
+## License
+
+Released under the [MIT License](LICENSE).
